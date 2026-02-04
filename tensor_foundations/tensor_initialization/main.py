@@ -4,7 +4,7 @@ import pandas as pd
 
 # 1. Tensor initialization
 tensor_A = tf.fill((3,3), 5)
-tensor_B = tf.Variable([[[2,3,4],[5,6,7]]])
+tensor_B = tf.Variable([[2,3,4],[5,6,7]])
 tensor_C = tf.zeros((3,3))
 tensor_D = tf.ones((4,4))
 tensor_E = tf.linspace(3,15,5)
