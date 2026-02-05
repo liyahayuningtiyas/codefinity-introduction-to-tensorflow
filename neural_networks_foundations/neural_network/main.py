@@ -16,11 +16,11 @@ learning_rate = 0.5
 
 # Weights and biases for the hidden layer
 W1 = tf.Variable(tf.random.normal((2, 2)))
-b1 = tf.Variable(tf.random.normal((2, )))
+b1 = tf.Variable(tf.zeros((hidden_size, )))
 
 # Weights and biases for the output layer
 W2 = tf.Variable(tf.random.normal((2, 1)))
-b2 = tf.Variable(tf.random.normal((1, )))
+b2 = tf.Variable(tf.zeros((output_size, )))
 
 # Function that describes a single training step
 @tf.function
